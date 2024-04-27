@@ -1,0 +1,6 @@
+#root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  margin-top: calc(0.1 * 100vh);
+  display: flex;
+  justify-content: center;
+}

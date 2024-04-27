@@ -1,0 +1,31 @@
+#auto-complete-container {
+  min-width: 30vw;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+#auto-complete-input-box {
+  font-size: 1.25em;
+  height: 1.75em;
+}
+
+#suggested-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#suggested-list > li {
+  align-content: center;
+  background-color: ghostwhite;
+  border: 1px solid rgba(128, 128, 128, 0.37);
+  border-radius: 2px;
+  color: #4b4848;
+  padding: 4px;
+  cursor: pointer;
+}
+
+#suggested-list > li:hover {
+  background-color: #c4c3c3;
+}
