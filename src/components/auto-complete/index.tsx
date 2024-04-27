@@ -2,6 +2,7 @@ import './index.css'
 import {useCallback, useEffect, useRef, useState} from "react";
 import {debounce} from "../../utility/debounce";
 
+// Just a small part of interface which I am using in this project
 interface ResponsePartialModel {
   name: {
     common: string
@@ -42,6 +43,13 @@ function AutoComplete() {
         abortControllerRef.current?.abort();
       }
 
+      // if value is empty no need to make an API call
+      if (value === "") {
+        console.log("Input field is empty or just have white space")
+        setSuggestedArray([]);
+        return;
+      }
+
       // Create a new AbortController instance
       abortControllerRef.current = new AbortController();
 
@@ -75,6 +83,7 @@ function AutoComplete() {
     }
   }
 
+  // using debouncing to avoid too many function calls
   const fetchSuggestionsDebounced = useCallback(debounce(fetchSuggestions), [])
 
   return (
