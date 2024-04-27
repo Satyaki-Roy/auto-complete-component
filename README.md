@@ -6,6 +6,8 @@ Note: I wanted to use a dictionary API that will predict the word I am about to 
 
 I have kept the UI lightweight by not doing the filtering on the client side.
 
+Repo Link: https://github.com/Satyaki-Roy/auto-complete-component
+
 ## Installation
 
 Use node 20.x.x which is the latest LTS version.
